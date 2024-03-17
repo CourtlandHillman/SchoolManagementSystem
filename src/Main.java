@@ -33,8 +33,15 @@ public class Main {
         System.out.println("Earned money: $"+xSchool.getTotalMoneyEarned());
         System.out.println("Salary payments: ");
         lizzy.receivePayments(lizzy.getSalary());
-        //collin.receivePayments(collin.getSalary());
-        //mike.receivePayments(mike.getSalary());
+        collin.receivePayments(collin.getSalary());
+        mike.receivePayments(mike.getSalary());
         System.out.println("Spent money: $"+xSchool.getTotalMoneyEarned());
+        System.out.println(kim);
+        System.out.println(lim);
+        System.out.println(lee);
+        System.out.println("");
+        System.out.println(lizzy);
+        System.out.println(collin);
+        System.out.println(mike);
     }
 }
