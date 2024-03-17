@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class deletemain {
+public class deletemain {
+    public static void main (String [] args){
+
+    }
 }
