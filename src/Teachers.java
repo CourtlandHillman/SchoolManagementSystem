@@ -6,6 +6,7 @@ public class Teachers {
     private  int id;
     private String name;
     private  int salary;
+    private int salaryEarned;
 
     /**
      * Teacher's constructor:
@@ -17,6 +18,7 @@ public class Teachers {
         this.id = id;
         this.name = name;
         this.salary = salary;
+        this.salaryEarned = 0;
     }
 
     public String getName(){
@@ -30,6 +32,16 @@ public class Teachers {
     }
     public void setSalary(int salary){
         this.salary = salary;
+    }
+
+    /**
+     * adds to the salary.
+     * remove from total money earned to xSchool
+     * @param salary
+     */
+    public void receivePayments(int salary){
+        salaryEarned += salary;
+        School.updateTotalMoneySpent(salary);
     }
 
 }

@@ -4,8 +4,8 @@ import java.util.List;
 public class School {
     private List<Teachers> teachersList;
     private List<Student> studentList;
-    private  int totalMoneyEarned;
-    private  int totalMoneySpent;
+    private static int totalMoneyEarned;
+    private  static int totalMoneySpent;
 
     /**
      *
@@ -55,8 +55,8 @@ public class School {
     public int getTotalMoneyEarned(){
         return totalMoneyEarned;
     }
-    public void  addTotalMoneyEarned( int totalMoneyEarned){
-        this.totalMoneyEarned += totalMoneyEarned;
+    public static void  updateTotalMoneyEarned( int moneyEarned){
+        totalMoneyEarned += moneyEarned;
     }
     /**
      * totalMoneySpent
@@ -64,7 +64,7 @@ public class School {
     public int getTotalMoneySpent(){
         return  totalMoneySpent;
     }
-    public void addTotalMoneySpent(){
-        this.totalMoneySpent += totalMoneySpent;
+    public static  void updateTotalMoneySpent(int moneySpent){
+        totalMoneyEarned -= moneySpent ;
     }
 }
